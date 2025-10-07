@@ -1,0 +1,69 @@
+/* whole nav bar */
+.Navbar {
+  background-color: #badfdb;
+  height: 100vh;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+}
+/* whole Navbar logo  */
+.Navlogo {
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid hsl(0, 0%, 0%, 20%);
+}
+/* just Navbar logo */
+.Navlogo img {
+  margin-top: 9px;
+  height: 70px;
+  padding-right: 10px;
+}
+/* Navbar pages */
+.Navlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Navlist li {
+  margin-top: 10px;
+}
+.Navlist a {
+  display: flex;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: black;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  text-align: center;
+  gap: 20px;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.Navlist a:hover {
+  cursor: pointer;
+  background-color: #86c7c0;
+  color: white;
+  box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
+}
+.NavIcon {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Navlist li.active a {
+  background-color: #86c7c0;
+  color: white;
+  border-left: 4px solid #2a7268;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
