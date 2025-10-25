@@ -108,7 +108,7 @@ function Transactionside({ onTotalsChange }) {
             <tr key={t.id}>
               <td>{t.type}</td>
               <td>{t.description}</td>
-              <td>₹{t.amount}</td>
+              <td>₹{t.amount.toLocaleString("en-IN")}</td>
               <td>
                 <button onClick={() => del(t.id)}>delete</button>
               </td>
