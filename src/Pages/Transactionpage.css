@@ -1,0 +1,14 @@
+.Transactionpage-container {
+  margin-top: 30px;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+/* Make the table bigger ONLY on this page */
+.Transactionpage-container .Table {
+  width: 100%;
+}
+
+.Transactionpage-container .Inputele {
+  margin-left: 230px;
+}

@@ -1,0 +1,43 @@
+/* ========== Card Container ========== */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* stays in one row on large screens */
+  gap: 40px;
+  margin: 85px 0 50px 85px;
+}
+
+/* ========== Card Styling ========== */
+.card {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  justify-content: flex-start;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  width: 170px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings inside each card */
+.card h1 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Value text inside each card */
+.card p {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #333;
+}

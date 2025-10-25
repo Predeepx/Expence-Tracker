@@ -1,18 +1,23 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Sidebar/Navbar.jsx";
+import Dashboard from "./Pages/Dashboard.jsx";
+import Transactionpage from "./Pages/Transactionpage";
+import About from "./Pages/About.jsx";
 import "./App.css";
-import Navbar from "./components/Navbar.jsx";
-
 
 function App() {
   return (
-    <>
-      <div >
+    <div className="AppLayout">
+      <Router>
         <Navbar />
-      </div>
-    </>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/transaction" element={<Transactionpage />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
-export default App;
+export default App ;

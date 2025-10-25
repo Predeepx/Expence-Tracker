@@ -1,0 +1,90 @@
+/* === Input Section === */
+.Inputele {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+select,
+input {
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  width: 180px;
+  padding: 10px;
+  transition: all 0.2s ease;
+  margin-left: 20px ;
+}
+
+/* Focus effect */
+select:focus,
+input:focus {
+  border-color: #ffa4a4;
+  box-shadow: 0 0 6px rgba(255, 164, 164, 0.4);
+}
+
+/* === Add Button === */
+.Add-btn {
+  border-radius: 8px;
+  border: none;
+  background-color: #ffa4a4;
+  color: white;
+  font-size: 14px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+}
+
+.Add-btn:hover {
+  background-color: #ffbdbd;
+  transform: translateY(-2px);
+}
+
+/* === Transaction Table === */
+.Table {
+  margin-left: 95px;
+  margin-top: 40px;
+  width: 90%;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+}
+
+th {
+  background-color: #badfdb; 
+  color: black;
+  padding: 12px;
+}
+
+td {
+  padding: 10px;
+  
+}
+
+tr:nth-child() {
+ background-color: #f0f5ff;
+}
+
+button {
+  background-color: #ffa4a4;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffbdbd;
+}
+.Table tr:hover {
+  background-color:  #f1f6ff;
+}
