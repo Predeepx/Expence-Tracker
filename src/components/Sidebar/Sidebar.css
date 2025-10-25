@@ -63,10 +63,9 @@
   align-items: center;
   justify-content: center;
 }
-.Navlist li .active {
+.Navlist a.active {
   background-color: #86c7c0;
   color: white;
   border-left: 4px solid #2a7268;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
 }

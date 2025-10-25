@@ -1,6 +1,6 @@
-import "./Navbar.css";
+import "./Sidebar.css";
 import logo from "../../assets/images/buffalo.png";
-import Navbaritems from "./NavbarItems";
+import Navbaritems from "./SidebarItems";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
@@ -17,6 +17,7 @@ function Navbar() {
           <li key={item.name}>
             <NavLink
               to={item.path}
+              end
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               <span className="NavIcon">{item.logo}</span>
