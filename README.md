@@ -46,6 +46,7 @@ expense-tracker/
 ✅ Real-time updates with React state management
 
 ⚙️ Installation & Setup
+https://roadmap.sh/projects/expense-tracker
 
 Run these commands:
 
